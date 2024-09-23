@@ -5,6 +5,7 @@ import {
   Poppins_500Medium,
   Poppins_800ExtraBold
 } from "@expo-google-fonts/poppins"
+import { StatusBar } from "expo-status-bar"
 
 import { Home } from "@/app/home"
 
@@ -16,9 +17,12 @@ export default function App() {
     Poppins_800ExtraBold
   })
 
-  if(!fontsLoaded){
+  if (!fontsLoaded) {
     return null
   }
 
-  return <Home />
+  return <>
+    <StatusBar style="light" backgroundColor="transparent" translucent />
+    <Home />
+  </>
 }
