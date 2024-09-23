@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     value: {
         color: colors.black,
         fontSize: 42,
-        fontFamily: fontFamily.bold
+        fontFamily: fontFamily.bold,
+        marginTop: -10
     }
 })

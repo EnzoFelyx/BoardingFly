@@ -48,6 +48,27 @@ export const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         marginBottom: 52,
-    }
+    },
+    duration: {
+        alignItems: "center"
+    },
+    hours: {
+        color: colors.gray[800],
+        fontSize: 14,
+        fontFamily: fontFamily.regular
+    },
+
+    label: {
+        color: colors.gray[400],
+        fontSize: 12,
+        textTransform: "uppercase",
+        fontFamily: fontFamily.regular
+    },
+
+    name: {
+        color: colors.black,
+        fontSize: 24,
+        fontFamily: fontFamily.bold
+    },
 
 });
