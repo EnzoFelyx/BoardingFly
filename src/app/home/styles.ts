@@ -31,7 +31,6 @@ export const styles = StyleSheet.create({
 
     ticket: {
         backgroundColor: colors.white,
-        flex: 1,
         width: "100%",
         borderRadius: 22,
         overflow: "hidden",
@@ -69,6 +68,28 @@ export const styles = StyleSheet.create({
         color: colors.black,
         fontSize: 24,
         fontFamily: fontFamily.bold
+    },
+
+    details:{
+        marginTop: 52,        
+    },
+    
+    inLine:{
+        flexDirection: "row",
+        width: "100%",
+        justifyContent: "space-between",
+    },
+
+    footer:{
+        width: "100%",
+        padding: 20,
+        flexDirection: "row",
+        gap: 22,
+    },
+
+    footerContent: {
+        flex: 1,
+        gap: 24,
     },
 
 });

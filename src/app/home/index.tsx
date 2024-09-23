@@ -1,8 +1,10 @@
 import { ImageBackground, Text, View } from 'react-native';
 import { Ionicons } from "@expo/vector-icons"
+import QRCode from 'react-native-qrcode-svg';
 
 import { styles } from './styles';
 import { Flight } from '@/components/flight';
+import { Info } from '@/components/info';
 import { colors } from '@/styles/colors';
 
 export function Home() {
@@ -14,6 +16,7 @@ export function Home() {
             </ImageBackground>
 
             <View style={styles.ticket}>
+
                 <View style={styles.content}>
                     <View style={styles.flight}>
                         <Flight label='Rio de Janeiro' value='GIG' />
@@ -29,7 +32,36 @@ export function Home() {
                     <Text style={styles.label}>Passageiro</Text>
                     <Text style={styles.name}>Enzo Felix dos Santos</Text>
 
+                    <View style={styles.details}>
+                        <View style={styles.inLine}>
+                            <Info label='Data' value='23 de Nov.' />
+                            <Info label='Embarque' value='19:22' />
+                        </View>
+                    </View>
+
                 </View>
+
+                <View></View>
+
+                <View style={styles.footer}>
+                    <View style={styles.footerContent}>
+
+                        <View style={styles.inLine}>
+                            <Info label='Voo' value='JE 203' />
+                            <Info label='Assento' value='42F' />
+                        </View>
+
+                        <View style={styles.inLine}>
+                            <Info label='Terminal' value='2' />
+                            <Info label='Portal' value='22' />
+                        </View>
+
+                    </View>
+
+                    <QRCode  value='boarding code' size={130}/>
+
+                </View>
+
             </View>
         </View>
     );
